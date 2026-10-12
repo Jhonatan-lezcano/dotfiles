@@ -1,0 +1,21 @@
+* {
+    /* Backgrounds */
+    crust: #11111B;
+    mantle: #181825;
+    base: #1E1E2E;
+
+    /* Surfaces */
+    surface0: #313244;
+    surface1: #45475A;
+    surface2: #585B70;
+
+    /* Text */
+    text: #CDD6F4;
+    subtext: #A6ADC8;
+    overlay: #6C7086;
+
+    /* Accents */
+    mauve: #CBA6F7;
+    lavender: #B4BEFE;
+    blue: #89B4FA;
+}

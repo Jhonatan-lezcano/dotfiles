@@ -1,0 +1,61 @@
+@import "colors.rasi"
+
+configuration {
+  font: "JetBrainsMono Nerd Font Mono 10";
+}
+
+window {
+  background-color: @base;
+  border-radius: 15px;
+  padding: 10px;
+  width: 40%;
+  border: none;
+  location: north;
+  y-offset: calc(30% - 100);
+}
+
+/* Inputbar*/
+entry {
+  background-color: @mantle;
+  text-color: @text;
+  placeholder-color: @overlay;
+}
+
+/* Listview*/
+listview {
+    scrollbar: false;
+    lines: 8;
+}
+
+element {
+  orientation: horizontal;
+  children: [ element-icon, element-text ];
+  spacing: 10px;
+  background-color: @base;
+  text-color: @text;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+element normal.normal {
+  background-color: @base;
+  text-color: @text;
+}
+
+element alternate.normal {
+  background-color: @mantle;
+  text-color: @text;
+}
+
+element selected.normal {
+  background-color: @surface0;
+  text-color: @mauve;
+}
+
+element-text {
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 1.6em;
+}

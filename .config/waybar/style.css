@@ -1,0 +1,153 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font Propo;
+    font-size: 13px;
+    min-height: 10px;
+}
+
+window#waybar {
+    /* background: #1A1B26; */
+    background: transparent;
+    color: white;
+    border-radius: 12px;
+}
+
+
+tooltip {
+  background: rgba(43, 48, 59, 0.9);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+  color: white;
+}
+
+#workspaces, 
+#clock, 
+#battery, 
+#pulseaudio, 
+#network, 
+#memory, 
+#cpu, 
+#bluetooth, 
+#custom-poweroff,
+#custom-notification,
+#temperature,
+#mpris, 
+#media{
+    /* background: #222330; */
+    background: #313244;
+    border-radius: 12px;
+    padding: 0 8px;
+    margin: 4px;
+    font-size: 12px;
+    color: #cdd6f4;
+}
+
+
+
+#custom-launcher {
+    background: transparent;
+    padding: 0 10px;
+    margin: 0 10px;
+    color: #7dcfff;
+    font-size: 18px;
+}
+
+#custom-poweroff {
+    color: #AD4A42;
+    font-size: 18px;
+}
+
+#workspaces button {
+    background: transparent;
+    padding: 5px 4px;
+    transition: none;
+}
+
+
+#workspaces button.persistent {
+    color: #7aa2f7;
+}
+
+#workspaces button.empty {
+    color: #583794
+}
+
+#workspaces button.active {
+    color: #FFFF00
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    background: transparent;
+    text-shadow: inherit;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        /* background-color: #ffffff; */
+        background: #AD4A42;
+        color: white;
+        /* color: black; */
+    }
+}
+
+#battery.warning:not(.charging) {
+    color: #AD4A42;
+}
+
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(20);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#pulseaudio-slider {
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+}
+
+#pulseaudio-slider slider {
+    all: unset;
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 5px;
+    min-width: 65px;
+    border-radius: 5px;
+    background: #1A1B26;
+}
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    min-height: 5px;
+    border-radius: 5px;
+    background: #33CCFE;
+}
+
+#custom-media-animation {
+    font-size: 10px;
+}
+
+#custom-media-now-playing {
+    margin: 0 10px;
+}
+
+#custom-media-time {
+    font-size: 10px;
+    color: #767983
+}
