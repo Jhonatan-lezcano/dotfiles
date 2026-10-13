@@ -6,15 +6,15 @@ hl.monitor({
 })
 
 hl.monitor({
-	output = "",
+	output = "DP-1",
 	mode = "preferred",
 	position = "auto-up",
 	scale = 1,
 })
 
 hl.monitor({
-	output = "DP-1",
+	output = "DP-2",
 	mode = "preferred",
 	position = "auto-left",
-	scale = 1.07,
+	scale = 1,
 })
