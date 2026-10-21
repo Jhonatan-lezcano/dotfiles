@@ -80,12 +80,11 @@
         "ignored-sinks": ["Easy Effects Sink"]
     },
     "network": {
-        "interface": "wlan0",
+        "interface": "wlo1",
         "format": "{ifname}",
         "format-wifi": " {signalStrength}%",
         "format-ethernet": "{ipaddr}/{cidr} 󰊗",
-        "format-disconnected": "", //An empty format will hide the module.    text-align: center;
-
+        "format-disconnected": "", //An empty format will hide the module.    text-align: center
         "tooltip-format": "{ifname} via {gwaddr} 󰊗",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} ",
