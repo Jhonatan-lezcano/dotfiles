@@ -35,10 +35,10 @@ hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.swap({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.swap({ direction = "down" }))
 
 -- Window resizing
-hl.bind(mainMod .. " + ALT + left", hl.dsp.window.resize({ x = -50, y = 0, relative = true }, { repeating = true }))
-hl.bind(mainMod .. " + ALT + right", hl.dsp.window.resize({ x = 50, y = 0, relative = true }, { repeating = true }))
-hl.bind(mainMod .. " + ALT + up", hl.dsp.window.resize({ x = 0, y = -50, relative = true }, { repeating = true }))
-hl.bind(mainMod .. " + ALT + down", hl.dsp.window.resize({ x = 0, y = 50, relative = true }, { repeating = true }))
+hl.bind(mainMod .. " + ALT + left", hl.dsp.window.resize({ x = -50, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + ALT + right", hl.dsp.window.resize({ x = 50, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + ALT + up", hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + ALT + down", hl.dsp.window.resize({ x = 0, y = 50, relative = true }), { repeating = true })
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
